@@ -1,0 +1,8 @@
+[Employee]-(Sign Up/In)
+[Employee]-(Take Leave)
+(Take Leave)>(Browse Types)
+(Take Leave)>(Check for Validation)
+(Check for Validation)<(Choose the Time)
+[Office Staff]-(Create Accounts)
+(Create Accounts)>(Send Information)
+(Send Information)
