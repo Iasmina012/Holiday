@@ -15,46 +15,49 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.holiday.HelloController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.holiday.Controller1">
    <left>
-      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #E96151;" BorderPane.alignment="CENTER">
-         <children>
-            <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="115.0" prefHeight="17.0" prefWidth="184.0" text="Holiday" textFill="WHITE">
-               <font>
-                  <Font name="Verdana Bold" size="24.0" />
-               </font>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </Label>
-            <Label alignment="TOP_CENTER" layoutX="18.0" layoutY="185.0" prefHeight="30.0" prefWidth="193.0" text="Take Time Off" textFill="WHITE">
-               <font>
-                  <Font name="Verdana Italic" size="24.0" />
-               </font>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </Label>
-            <Line endX="100.0" layoutX="114.0" layoutY="163.0" startX="-100.0" stroke="WHITE" />
-            <Circle fill="#ffffff00" layoutX="114.0" layoutY="164.0" radius="103.0" stroke="WHITE" strokeType="INSIDE">
-               <effect>
-                  <MotionBlur />
-               </effect>
-            </Circle>
-            <Ellipse fill="WHITE" layoutX="43.0" layoutY="100.0" radiusX="15.0" radiusY="15.0" stroke="WHITE" strokeType="INSIDE">
-               <effect>
-                  <InnerShadow />
-               </effect>
-            </Ellipse>
-            <Label alignment="TOP_CENTER" layoutX="8.0" layoutY="363.0" prefHeight="17.0" prefWidth="212.0" text="Copyright (c). All Rights Reserved." textFill="WHITE">
-               <font>
-                  <Font name="Verdana" size="12.0" />
-               </font>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </Label>
-         </children>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #E96151;"
+                  BorderPane.alignment="CENTER">
+         <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="115.0" prefHeight="17.0" prefWidth="184.0" text="Holiday"
+                textFill="WHITE">
+            <font>
+               <Font name="Verdana Bold" size="24.0"/>
+            </font>
+            <effect>
+               <DropShadow/>
+            </effect>
+         </Label>
+         <Label alignment="TOP_CENTER" layoutX="18.0" layoutY="185.0" prefHeight="30.0" prefWidth="193.0"
+                text="Take Time Off" textFill="WHITE">
+            <font>
+               <Font name="Verdana Italic" size="24.0"/>
+            </font>
+            <effect>
+               <DropShadow/>
+            </effect>
+         </Label>
+         <Line endX="100.0" layoutX="114.0" layoutY="163.0" startX="-100.0" stroke="WHITE"/>
+         <Circle fill="#ffffff00" layoutX="114.0" layoutY="164.0" radius="103.0" stroke="WHITE" strokeType="INSIDE">
+            <effect>
+               <MotionBlur/>
+            </effect>
+         </Circle>
+         <Ellipse fill="WHITE" layoutX="43.0" layoutY="100.0" radiusX="15.0" radiusY="15.0" stroke="WHITE"
+                  strokeType="INSIDE">
+            <effect>
+               <InnerShadow/>
+            </effect>
+         </Ellipse>
+         <Label alignment="TOP_CENTER" layoutX="8.0" layoutY="363.0" prefHeight="17.0" prefWidth="212.0"
+                text="Copyright (c). All Rights Reserved." textFill="WHITE">
+            <font>
+               <Font name="Verdana" size="12.0"/>
+            </font>
+            <effect>
+               <DropShadow/>
+            </effect>
+         </Label>
       </AnchorPane>
    </left>
    <center>
