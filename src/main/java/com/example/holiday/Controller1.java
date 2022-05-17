@@ -38,32 +38,55 @@ public class Controller1 {
 
    public void initialize() {
        myChoiceBox.getItems().addAll("Admin", "User");
+       myChoiceBox.setValue("User");
+
    }
-       public void cancelButtonAction (ActionEvent e){
+
+    public void getChoice(ChoiceBox<String> myChoiceBox){
+        String role = myChoiceBox.getValue();
+    }
+
+    public void cancelButtonAction (ActionEvent e){
            Stage stage = (Stage) cancelButton.getScene().getWindow();
            stage.close();
        }
 
     public void loginButtonAction (ActionEvent e) throws IOException{
-        loginMessageLabel.setText("Da");if(usernameTextField.getText().isBlank()==false && passwordPasswordField.getText().isBlank()==false)
+
+        FXMLLoader loader1 = new FXMLLoader(getClass().getResource("Employee.fxml"));
+        FXMLLoader loader2 = new FXMLLoader(getClass().getResource("HR.fxml"));
+
+        if(usernameTextField.getText().isBlank()==false && passwordPasswordField.getText().isBlank()==false)
         {
-            loginMessageLabel.setText("You try to login");
+            if(myChoiceBox.getValue()=="User") {
+
+                root = loader1.load();
+                Controller2 scene2Controller = loader1.getController();
+
+                //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
+                stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+
+
+            }
+            else{
+
+                root = loader2.load();
+                Controller3 scene3Controller = loader2.getController();
+
+                stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+
+                }
         } else {
-            loginMessageLabel.setText("Please enter username and password.");
+
+            loginMessageLabel.setText("Please enter the username and password");
         }
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Employee.fxml"));
-        root = loader.load();
-
-        Controller2 scene2Controller = loader.getController();
-
-        //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
-
-
 
 }
