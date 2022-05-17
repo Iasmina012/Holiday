@@ -4,15 +4,27 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Controller2 {
+
+    @FXML
+    private Button closeButton;
+
+    @FXML
+    private Button backButton;
 
     @FXML
     private Button validButton;
@@ -32,9 +44,14 @@ public class Controller2 {
     @FXML
     private Label myLabel2;
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
     public void initialize () {
 
-        myListView.getItems().addAll("Maternity Leave",
+        myListView.getItems().addAll(
+                "Maternity Leave",
                 "Paternity Leave",
                 "Casual Leave",
                 "Holiday",
@@ -46,7 +63,9 @@ public class Controller2 {
                 "Childcare leave",
                 "Holiday for special events",
                 "Quarantine leave",
-                "Accommodation leave");
+                "Accommodation leave",
+                " "
+                );
 
         myListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
 
@@ -67,6 +86,26 @@ public class Controller2 {
     }
 
     public void validButtonAction (ActionEvent e){
-        requestMessageLabel.setText("Request sent for validation");
+
+        if (myLabel1.getText().isBlank()==false && myLabel2.getText().isBlank()==false)
+            requestMessageLabel.setText("Request sent for validation");
+            else
+                requestMessageLabel.setText("Invalid Choices");
     }
+
+    FXMLLoader loader3 = new FXMLLoader(getClass().getResource("Register.fxml"));
+    public void backButtonAction (ActionEvent e) throws IOException {
+        root = loader3.load();
+        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void closeButtonAction (ActionEvent e){
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
+    }
+
 }
+

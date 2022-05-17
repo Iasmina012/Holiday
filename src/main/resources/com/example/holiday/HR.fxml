@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -22,7 +23,20 @@
             </children>
         </AnchorPane>
     </top>
+   <bottom>
+      <AnchorPane prefHeight="43.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="8.0" layoutY="9.0" mnemonicParsing="false" onAction="#backButtonAction" style="-fx-background-color: #defcfb;" text="Back" textFill="#656464" />
+            <Button fx:id="closeButton" layoutX="463.0" layoutY="9.0" mnemonicParsing="false" onAction="#closeButtonAction" style="-fx-background-color: #defcfb;" text="Close" textFill="#656464" />
+            <Label alignment="TOP_CENTER" layoutX="59.0" layoutY="13.0" prefHeight="17.0" prefWidth="395.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
    <center>
-      <Button mnemonicParsing="false" text="Validate Requests" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="202.0" layoutY="262.0" mnemonicParsing="false" style="-fx-background-color: #defcfb;" text="Validate Requests" textFill="#656464" />
+         </children>
+      </AnchorPane>
    </center>
 </BorderPane>
