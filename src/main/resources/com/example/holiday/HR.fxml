@@ -23,6 +23,6 @@
         </AnchorPane>
     </top>
    <center>
-      <Button mnemonicParsing="false" text="Validate Request" BorderPane.alignment="CENTER" />
+      <Button mnemonicParsing="false" text="Validate Requests" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
