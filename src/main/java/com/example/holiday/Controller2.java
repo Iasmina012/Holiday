@@ -8,10 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -44,11 +41,18 @@ public class Controller2 {
     @FXML
     private Label myLabel2;
 
+    @FXML
+    private Spinner<Integer> mySpinner;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
 
     public void initialize () {
+
+        SpinnerValueFactory<Integer> valueFactory =  new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 14);
+        valueFactory.setValue(0);
+        mySpinner.setValueFactory(valueFactory);
 
         myListView.getItems().addAll(
                 "Maternity Leave",
@@ -86,7 +90,7 @@ public class Controller2 {
 
     public void validButtonAction (ActionEvent e){
 
-        if (myLabel1.getText().isBlank()==false && myLabel2.getText().isBlank()==false)
+        if (myLabel1.getText().isBlank()==false && myLabel2.getText().isBlank()==false && mySpinner.getValue()!=0)
             requestMessageLabel.setText("Request sent for validation");
         else
             requestMessageLabel.setText("Invalid Choices");
