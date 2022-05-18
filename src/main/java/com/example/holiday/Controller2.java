@@ -65,7 +65,7 @@ public class Controller2 {
                 "Quarantine leave",
                 "Accommodation leave",
                 " "
-                );
+        );
 
         myListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
 
@@ -89,8 +89,8 @@ public class Controller2 {
 
         if (myLabel1.getText().isBlank()==false && myLabel2.getText().isBlank()==false)
             requestMessageLabel.setText("Request sent for validation");
-            else
-                requestMessageLabel.setText("Invalid Choices");
+        else
+            requestMessageLabel.setText("Invalid Choices");
     }
 
     FXMLLoader loader3 = new FXMLLoader(getClass().getResource("Register.fxml"));
@@ -108,4 +108,3 @@ public class Controller2 {
     }
 
 }
-

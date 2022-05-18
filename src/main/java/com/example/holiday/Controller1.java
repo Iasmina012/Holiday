@@ -36,20 +36,20 @@ public class Controller1 {
     private Scene scene;
     private Parent root;
 
-   public void initialize() {
-       myChoiceBox.getItems().addAll("Admin", "User");
-       myChoiceBox.setValue("User");
+    public void initialize() {
+        myChoiceBox.getItems().addAll("Admin", "User");
+        myChoiceBox.setValue("User");
 
-   }
+    }
 
     public void getChoice(ChoiceBox<String> myChoiceBox){
         String role = myChoiceBox.getValue();
     }
 
     public void cancelButtonAction (ActionEvent e){
-           Stage stage = (Stage) cancelButton.getScene().getWindow();
-           stage.close();
-       }
+        Stage stage = (Stage) cancelButton.getScene().getWindow();
+        stage.close();
+    }
 
     public void loginButtonAction (ActionEvent e) throws IOException{
 
@@ -81,7 +81,7 @@ public class Controller1 {
                 stage.setScene(scene);
                 stage.show();
 
-                }
+            }
         } else {
 
             loginMessageLabel.setText("Please enter the username and password");

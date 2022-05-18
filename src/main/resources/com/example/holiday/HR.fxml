@@ -28,14 +28,14 @@
          <children>
             <Button fx:id="backButton" layoutX="8.0" layoutY="9.0" mnemonicParsing="false" onAction="#backButtonAction" style="-fx-background-color: #defcfb;" text="Back" textFill="#656464" />
             <Button fx:id="closeButton" layoutX="463.0" layoutY="9.0" mnemonicParsing="false" onAction="#closeButtonAction" style="-fx-background-color: #defcfb;" text="Close" textFill="#656464" />
-            <Label alignment="TOP_CENTER" layoutX="59.0" layoutY="13.0" prefHeight="17.0" prefWidth="395.0" />
+            <Label fx:id="validationText" alignment="TOP_CENTER" layoutX="59.0" layoutY="13.0" prefHeight="17.0" prefWidth="395.0" textFill="#656464" />
          </children>
       </AnchorPane>
    </bottom>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="202.0" layoutY="262.0" mnemonicParsing="false" style="-fx-background-color: #defcfb;" text="Validate Requests" textFill="#656464" />
+            <Button fx:id="validationButton" layoutX="202.0" layoutY="262.0" mnemonicParsing="false" onAction="#validationButtonAction" style="-fx-background-color: #defcfb;" text="Validate Requests" textFill="#656464" />
          </children>
       </AnchorPane>
    </center>

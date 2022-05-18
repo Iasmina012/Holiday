@@ -18,6 +18,12 @@ public class Controller3 {
     Label nameLabel;
 
     @FXML
+    private Label validationText;
+
+    @FXML
+    private Button validationButton;
+
+    @FXML
     private Button closeButton;
 
     @FXML
@@ -39,6 +45,10 @@ public class Controller3 {
     public void closeButtonAction (ActionEvent e){
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
+    }
+
+    public void validationButtonAction (ActionEvent e){
+        validationText.setText("Requests validated");
     }
 
     public void displayName (String username) {
