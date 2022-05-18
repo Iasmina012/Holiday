@@ -8,6 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -29,9 +33,17 @@ public class Controller3 {
     @FXML
     private Button backButton;
 
+    @FXML
+    private ImageView myImageView;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
+
+    public void initialize(){
+        Image image = new Image("file:///Users/iasmina012/IdeaProjects/demo/Holiday/src/hr.jpg");
+        myImageView.setImage(image);
+    }
 
     FXMLLoader loader4 = new FXMLLoader(getClass().getResource("Register.fxml"));
     public void backButtonAction (ActionEvent e) throws IOException {
@@ -49,10 +61,7 @@ public class Controller3 {
 
     public void validationButtonAction (ActionEvent e){
         validationText.setText("Requests validated");
+
     }
 
-    public void displayName (String username) {
-        nameLabel.setText("Hello 3: " + username);
-    }
 }
-
