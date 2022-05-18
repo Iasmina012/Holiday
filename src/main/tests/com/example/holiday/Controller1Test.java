@@ -14,7 +14,7 @@ class Controller1Test {
 
     @Test
     void loginButtonAction() {
-        Assertions.assertEquals(1,1);
+        Assertions.assertEquals(1,2);
     }
 
 
