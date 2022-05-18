@@ -2,11 +2,15 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+
+
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #89CFF0#89CFF0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.holiday.Controller3">
     <top>
@@ -36,6 +40,11 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="validationButton" layoutX="202.0" layoutY="262.0" mnemonicParsing="false" onAction="#validationButtonAction" style="-fx-background-color: #defcfb;" text="Validate Requests" textFill="#656464" />
+            <Separator layoutX="144.0" layoutY="12.0" prefHeight="4.0" prefWidth="232.0" />
+            <Separator layoutX="144.0" layoutY="247.0" prefHeight="4.0" prefWidth="232.0" />
+            <Separator layoutX="141.0" layoutY="13.0" orientation="VERTICAL" prefHeight="237.0" prefWidth="4.0" />
+            <Separator layoutX="373.0" layoutY="12.0" orientation="VERTICAL" prefHeight="238.0" prefWidth="4.0" />
+            <ImageView fx:id="myImageView" fitHeight="223.0" fitWidth="222.0" layoutX="148.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
    </center>

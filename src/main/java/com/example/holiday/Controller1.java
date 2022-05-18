@@ -61,9 +61,6 @@ public class Controller1 {
             if(myChoiceBox.getValue()=="User") {
 
                 root = loader1.load();
-                Controller2 scene2Controller = loader1.getController();
-
-                //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
                 stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
@@ -74,8 +71,6 @@ public class Controller1 {
             else{
 
                 root = loader2.load();
-                Controller3 scene3Controller = loader2.getController();
-
                 stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
