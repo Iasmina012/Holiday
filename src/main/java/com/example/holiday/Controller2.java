@@ -63,8 +63,7 @@ public class Controller2 {
                 "Childcare leave",
                 "Holiday for special events",
                 "Quarantine leave",
-                "Accommodation leave",
-                " "
+                "Accommodation leave"
         );
 
         myListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
