@@ -3,7 +3,7 @@
 
 ### _General Description_
 This is an application that aims to help all employees of a company. The application is a management of the leave of employees within a company (for internal use). It is administered by the Human Resources department.
-###  _Autentificare_
+###  _Authentication_
 The user must choose the role for authentication: employee (user) or human resources representative (admin). Both roles have a unique username and password.
 * Employee
 * Human Resources Representative
