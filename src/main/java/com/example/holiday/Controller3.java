@@ -41,6 +41,8 @@ public class Controller3 {
     private Parent root;
 
     public void initialize(){
+
+        //drag and drop file to browser for path (realized after 1 day :) )
         Image image = new Image("file:///Users/iasmina012/IdeaProjects/demo/Holiday/src/hr.jpg");
         myImageView.setImage(image);
     }
