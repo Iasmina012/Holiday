@@ -35,4 +35,9 @@ class Controller1Test {
     @Test
     void validateLogin() {
     }
+
+    @Test
+    void contextLoads(){
+    }
+
 }
