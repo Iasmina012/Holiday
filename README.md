@@ -1,17 +1,23 @@
 # **Holiday**
 
 
-### _Descriere generală_
-Aceasta este o aplicație care are ca scop să ajute toți angajații unei firme. Aplicația este una de gestiune a concediilor ale angajaților din cadrul unei firme (pentru uz intern). Ea este administrată de departamentul de Resurse Umane.
-###  _Autentificare_
-Utilizatorul trebuie să aleagă rolul la autentificare: angajat sau rezprezentant resurse umane. Ambelor roluri le corespund un nume de utilizator și o parolă unică.
-* Angajat (împreună cu departamentul în care lucrează)
-* Reprezentant Resurse Umane
+### _General Description_
+This is an application that aims to help all employees of a company. The application is a management of the leave of employees within a company (for internal use). It is administered by the Human Resources department.
+###  _Authentication_
+The user must choose the role for authentication: employee (user) or human resources representative (admin). Both roles have a unique username and password.
+* Employee
+* Human Resources Representative
 
-### _Reprezentant HR_
-Scopul acestui rol este de a crea noi conturi pentru angajați, de a le trimite informatiile pe email și de a se ocupa de mentenanța platformei. După procesarea datelor unui angajat, prin intermediul aplicației, echipa de Resurse Umane va crea un cont pentru angajatul respectiv. Parola se va genera pe loc, transmisă angajatului, care la prima autentificare va trebui să își aleagă o parolă nouă din motive de securitate. Toate solicitările de concediu ale angajaților vor fi procesate apoi de Resursele Umane, apoi angajatul va primi apoi datele necesare pentru concediu, tot prin intermediul aplicației. De asemenea, reprezentanții Resurselor Umane dispun de aplicație la fel ca un alt angajat.
+<img width="632" alt="register" src="https://user-images.githubusercontent.com/71723590/168994746-2f567ed6-f273-4258-930c-5b45a425619f.png">
 
-### _Angajat_
-Când un angajat primește informațiile aferente contului, acesta va fi obligat să își seteze o nouă parolă la prima sa autentificare. Fiecare angajat poate solicita prin intermediul aplicației tipul de concediu dorit (ex: de odihnă, pentru formarea profesională, fără plata, medical, de maternitate, paternal, pentru îngrijirea copilului, pentru evenimente deosebite, carantină) pentru un anumit interval de timp. Cererea este înaintată reprezentatului Resurselor Umane, care o poate accepta sau nu, angajatul fiind notificat printr-o interfață.
+### _Human Resources Representative (HR)_
+The purpose of this role is to create new employee accounts, validate employee leaves, and maintain the platform. After processing an employee’s data, through the application, the Human Resources team will create an account for that employee. All employee leave requests will then be processed by Human Resources. Also, the Human Resources representatives can use the application just like another employee (they can return to the login page through the back button and can choose the role of user in order to be able to request their leave).
 
-Pentru o bună funcționare, aplicația ține minte istoricul concediilor și zilele rămase de odihnă pentru fiecare persoana atat pentru angajati cat si cei de la Resurse Umane.
+<img width="632" alt="hr" src="https://user-images.githubusercontent.com/71723590/168994830-f3269d9c-ac41-4484-ac6c-5cb8d4b7a90d.png">
+
+### _Employee_
+When an employee logs in they will pe prompted to a gui where they can browse the leave types, see a calendar where they can select the date and select the number of days for the leave. Each employee can request through the application the type of leave desired (eg: rest, for vocational training, unpaid, medical, maternity, paternal, childcare, special events, quarantine) for a certain period of time. The request is submitted to the Human Resources representative, who may or may not accept it.
+
+<img width="632" alt="employee" src="https://user-images.githubusercontent.com/71723590/168994816-3f55db9c-c403-4ebc-8cd3-f3db3aa0e18b.png">
+
+For a good operation, the application remembers the history of holidays for both employees and those from Human Resources.
