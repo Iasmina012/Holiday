@@ -1,6 +1,8 @@
 module com.example.holiday {
-    requires javafx.controls;
+    requires java.sql;
+    requires javafx.graphics;
     requires javafx.fxml;
+    requires javafx.controls;
 
 
     opens com.example.holiday to javafx.fxml;
