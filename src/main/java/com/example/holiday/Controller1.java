@@ -12,6 +12,9 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -58,6 +61,8 @@ public class Controller1 {
 
         if(usernameTextField.getText().isBlank()==false && passwordPasswordField.getText().isBlank()==false)
         {
+            //validateLogin();
+
             if(myChoiceBox.getValue()=="User") {
 
                 root = loader1.load();
@@ -82,6 +87,29 @@ public class Controller1 {
             loginMessageLabel.setText("Please enter the username and password");
         }
 
+    }
+
+    public void validateLogin(){
+        DatabaseConnection connectNow = new DatabaseConnection();
+        Connection connectDB = connectNow.getConnection();
+
+        String verifyLogin = "SELECT count(1) FROM UserAccounts WHERE username = '"+usernameTextField.getText()+"' AND PASSWORD = '"+passwordPasswordField.getText()+"'";
+        try{
+            Statement statement = connectDB.createStatement();
+            ResultSet queryResult = statement.executeQuery(verifyLogin);
+            while(queryResult.next()){
+                if(queryResult.getInt(1)==1)
+                {
+                    loginMessageLabel.setText("Welcome");
+                }
+                else
+                {
+                    loginMessageLabel.setText("Try again");
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }
