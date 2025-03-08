@@ -8,16 +8,16 @@ The user must choose the role for authentication: employee (user) or human resou
 * Employee
 * Human Resources Representative
 
-<img align="center" width="700" alt="register" src="https://user-images.githubusercontent.com/71723590/168994746-2f567ed6-f273-4258-930c-5b45a425619f.png">
+<img alt="register" src="https://user-images.githubusercontent.com/71723590/168994746-2f567ed6-f273-4258-930c-5b45a425619f.png">
 
 ### _Human Resources Representative (HR)_
 The purpose of this role is to create new employees accounts, validate employees' leaves, and maintain the platform. After processing an employee’s data, through the application, the Human Resources team will create an account for that employee. All employees' leave requests will then be processed by the Human Resources. Also, the Human Resources representatives can use the application just like another employee (they can return to the login page through the back button and can choose the role of user in order to be able to request their own leave).
 
-<img align="center" width="700" alt="hr" src="https://user-images.githubusercontent.com/71723590/168994830-f3269d9c-ac41-4484-ac6c-5cb8d4b7a90d.png">
+<img alt="hr" src="https://user-images.githubusercontent.com/71723590/168994830-f3269d9c-ac41-4484-ac6c-5cb8d4b7a90d.png">
 
 ### _Employee_
 When an employee logs in they will pe prompted with a GUI where they can browse the types of leave, see a calendar where they can select the date and the number of days for the leave. Each employee can request through the application the type of leave desired (e.g.: rest, for vocational training, unpaid, medical, maternity, paternal, childcare, special events, quarantine) for a certain period of time. The request is submitted to the Human Resources representative, who may or may not accept it.
 
-<img align="center" width="700" alt="employee" src="https://user-images.githubusercontent.com/71723590/168994816-3f55db9c-c403-4ebc-8cd3-f3db3aa0e18b.png">
+<img alt="employee" src="https://user-images.githubusercontent.com/71723590/168994816-3f55db9c-c403-4ebc-8cd3-f3db3aa0e18b.png">
 
 For a good and smooth operation, the application remembers the history of holidays for both employees and those from Human Resources.
