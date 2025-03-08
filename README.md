@@ -8,7 +8,7 @@ The user must choose the role for authentication: employee (user) or human resou
 * Employee
 * Human Resources Representative
 
-<img width="632" alt="register" src="https://user-images.githubusercontent.com/71723590/168994746-2f567ed6-f273-4258-930c-5b45a425619f.png">
+<img alt="register" src="https://user-images.githubusercontent.com/71723590/168994746-2f567ed6-f273-4258-930c-5b45a425619f.png">
 
 ### _Human Resources Representative (HR)_
 The purpose of this role is to create new employees accounts, validate employees' leaves, and maintain the platform. After processing an employee’s data, through the application, the Human Resources team will create an account for that employee. All employees' leave requests will then be processed by the Human Resources. Also, the Human Resources representatives can use the application just like another employee (they can return to the login page through the back button and can choose the role of user in order to be able to request their own leave).
